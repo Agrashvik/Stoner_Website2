@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for eco-friendly stone paper products. Browse our selection of paper and notebooks.">
     <title>Shopping - Stone Paper</title>
     <style>
+        /* Basic styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -38,6 +40,13 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
         .product-list {
             list-style-type: none;
             padding: 0;
@@ -46,12 +55,19 @@
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #4CAF50;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
             color: white;
-            margin-top: 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #333;
         }
     </style>
 </head>
@@ -60,23 +76,23 @@
     <!-- Header section -->
     <header>
         <h1>Shopping - Stone Paper</h1>
+        <p>Browse Our Eco-friendly Products</p>
     </header>
 
     <!-- Navigation section -->
     <nav role="navigation">
-        <a href="index.html">Home</a>
-        <a href="#products">Products</a>
+        <a href="index.html" class="button">Home</a>
     </nav>
 
     <!-- Main content section -->
     <main>
         <h2>Our Products</h2>
         <ul class="product-list">
-            <li><strong>Plain A4 Sheets</strong> - High-quality, eco-friendly A4 sheets for all your needs.</li>
-            <li><strong>Colour A4 Sheets</strong> - Vibrant and durable colour A4 sheets for creative projects.</li>
-            <li><strong>Notebooks</strong> - Stylish and sustainable notebooks for everyday use.</li>
-            <li><strong>Pocket Notebooks</strong> - Compact and convenient pocket-sized notebooks.</li>
-            <li><strong>Art Books</strong> - Beautifully crafted art books for artists and designers.</li>
+            <li>Plain A4 Sheets</li>
+            <li>Colour A4 Sheets</li>
+            <li>Notebooks</li>
+            <li>Pocket Notebooks</li>
+            <li>Art Books</li>
         </ul>
     </main>
 
