@@ -54,10 +54,6 @@
             margin: 10px 0 0;
             font-size: 16px;
         }
-        .back-button, .donate-button {
-            text-align: center;
-            margin: 30px 0;
-        }
         .button, .donate-button-button {
             background-color: #4CAF50;
             color: white;
@@ -67,9 +63,14 @@
             cursor: pointer;
             text-decoration: none;
             font-size: 18px;
+            margin: 10px;
         }
         .button:hover, .donate-button-button:hover {
             background-color: #45a049;
+        }
+        .back-button {
+            text-align: center;
+            margin: 30px 0;
         }
     </style>
 </head>
@@ -117,7 +118,7 @@
 
     <footer role="contentinfo">
         <div class="back-button">
-            <button onclick="window.history.back()">Go Back</button>
+            <button onclick="window.history.back()" style="font-size: 18px; padding: 10px 20px;">Go Back</button>
         </div>
     </footer>
 
