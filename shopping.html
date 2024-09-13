@@ -3,95 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping</title>
+    <title>Shopping Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0;
         }
         .product {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         .product h3 {
             margin: 0;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
+        .back-button {
+            margin-top: 20px;
+        }
+        .button {
             background-color: #4CAF50;
             color: white;
-        }
-        a {
-            text-decoration: none;
-            color: white;
             padding: 10px 20px;
-            background-color: #ff6600;
+            border: none;
             border-radius: 5px;
-            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
         }
-        a:hover {
-            background-color: #ff3300;
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Shopping</h1>
-    </header>
-    <main>
-        <div class="product">
-            <h3>Plain A4 Sheets</h3>
-            <p>100% recycled paper. High-quality for printing.</p>
-        </div>
-        <div class="product">
-            <h3>Colour A4 Sheets</h3>
-            <p>Vibrant colors for crafting and printing.</p>
-        </div>
-        <div class="product">
-            <h3>Notebooks</h3>
-            <p>Eco-friendly, durable, and perfect for school.</p>
-        </div>
-        <div class="product">
-            <h3>Pocket Notebooks</h3>
-            <p>Handy notebooks for quick notes on the go.</p>
-        </div>
-        <div class="product">
-            <h3>Art Books</h3>
-            <p>Best for sketching and creative works.</p>
-        </div>
-        <div class="product">
-            <h3>Origami Paper</h3>
-            <p>Colorful squares for origami art and crafting.</p>
-        </div>
-        <a href="donate.html">Donate</a>
-    </main>
-    <footer>
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to email us at: avirajkumarsingh.18cmis0102@meruinternationalschool.com</p>
-        <p>&copy; 2024 Stone Paper</p>
-    </footer>
+
+    <h1>Shopping Page</h1>
+
+    <div class="product">
+        <h3>Plain A4 Sheets</h3>
+        <p>High-quality plain sheets for everyday use.</p>
+    </div>
+
+    <div class="product">
+        <h3>Colour A4 Sheets</h3>
+        <p>Bright and colorful A4 sheets perfect for arts and crafts.</p>
+    </div>
+
+    <div class="product">
+        <h3>Notebooks</h3>
+        <p>Durable notebooks for all your writing needs.</p>
+    </div>
+
+    <div class="product">
+        <h3>Pocket Notebooks</h3>
+        <p>Small, handy notebooks for quick notes on the go.</p>
+    </div>
+
+    <div class="product">
+        <h3>Art Books</h3>
+        <p>Premium quality art books for sketching and drawing.</p>
+    </div>
+
+    <div class="product">
+        <h3>Origami Paper</h3>
+        <p>Perfect paper for creating intricate origami designs.</p>
+    </div>
+
+    <div class="back-button">
+        <button onclick="window.history.back()">Go Back</button>
+    </div>
+
 </body>
 </html>
