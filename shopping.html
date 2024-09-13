@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop for stone paper products including A4 sheets, notebooks, and more.">
-    <title>Shop - Stone Paper Products</title>
+    <meta name="description" content="Buy eco-friendly stone paper products. A range of products like A4 sheets, notebooks, and art books.">
+    <title>Shopping - Stone Paper Products</title>
     <style>
+        /* Basic styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
         }
+
         header {
             background-color: #4CAF50;
             padding: 20px;
             text-align: center;
             color: white;
         }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        nav a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .product {
             background-color: #e0e0e0;
-            margin: 15px 0;
             padding: 15px;
+            margin: 15px 0;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .product h3 {
-            margin: 0;
+
+        .product-description {
+            margin-left: 10px;
         }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -43,54 +67,106 @@
             color: white;
             margin-top: 20px;
         }
+
+        .donate {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #ff5733;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .donate:hover {
+            background-color: #ff794d;
+        }
+
+        .shopping-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 18px;
+            margin: 10px 0;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .shopping-button:hover {
+            background-color: #007A99;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header section -->
     <header>
-        <h1>Stone Paper Products</h1>
-        <p>Shop eco-friendly products</p>
+        <h1>Shop Stone Paper Products</h1>
+        <p>Eco-friendly paper products</p>
     </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="donation.html">Donate Now</a>
+    </nav>
 
     <!-- Main content section -->
     <main>
-        <section class="product">
-            <h3>Plain A4 Sheets</h3>
-            <p>Durable and smooth A4-sized sheets made from stone paper.</p>
+        <section id="products">
+            <h2>Our Products</h2>
+
+            <div class="product">
+                <div class="product-description">
+                    <h3>Plain A4 Sheets</h3>
+                    <p>100% eco-friendly plain A4 sheets made from stone paper.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-description">
+                    <h3>Colour A4 Sheets</h3>
+                    <p>Vibrant, sustainable colour A4 sheets for all your needs.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-description">
+                    <h3>Notebooks</h3>
+                    <p>Durable notebooks with smooth stone paper pages.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-description">
+                    <h3>Pocket Notebooks</h3>
+                    <p>Portable and handy pocket notebooks made from stone paper.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-description">
+                    <h3>Art Books</h3>
+                    <p>Premium art books with stone paper, perfect for artists.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="product">
-            <h3>Colour A4 Sheets</h3>
-            <p>Vibrant, colorful A4 sheets perfect for projects and crafts.</p>
-        </section>
-
-        <section class="product">
-            <h3>Notebooks</h3>
-            <p>Eco-friendly notebooks made from stone paper, available in various sizes.</p>
-        </section>
-
-        <section class="product">
-            <h3>Pocket Notebooks</h3>
-            <p>Convenient and durable pocket-sized notebooks for notes on the go.</p>
-        </section>
-
-        <section class="product">
-            <h3>Art Books</h3>
-            <p>High-quality art books designed for drawing and painting, made from stone paper.</p>
-        </section>
+        <!-- Donate Now Button -->
+        <div style="text-align: center;">
+            <a href="donation.html" class="donate">Donate Now</a>
+        </div>
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; <span id="year">2024</span> Stone Paper. All Rights Reserved.</p>
+        <p>&copy; 2024 Stone Paper Products. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        // JavaScript to update the footer year automatically
-        const yearSpan = document.getElementById('year');
-        yearSpan.textContent = new Date().getFullYear();
-    </script>
 
 </body>
 </html>
