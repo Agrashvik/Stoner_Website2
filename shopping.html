@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping - Stone Paper</title>
+    <title>Shopping</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
         header {
             background-color: #4CAF50;
+            color: white;
             padding: 20px;
             text-align: center;
-            color: white;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .product {
             display: flex;
             justify-content: space-between;
-            margin: 20px 0;
+            align-items: center;
             padding: 15px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .product h3 {
             margin: 0;
-        }
-        .product p {
-            margin: 0;
-            font-size: 0.9em;
         }
         footer {
             text-align: center;
@@ -39,41 +44,53 @@
             background-color: #4CAF50;
             color: white;
         }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #ff3300;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Our Products</h1>
+        <h1>Shopping</h1>
     </header>
-
     <main>
         <div class="product">
             <h3>Plain A4 Sheets</h3>
-            <p>High-quality plain A4 sheets for all your printing needs.</p>
+            <p>100% recycled paper. High-quality for printing.</p>
         </div>
         <div class="product">
             <h3>Colour A4 Sheets</h3>
-            <p>Vibrant color A4 sheets perfect for craft projects.</p>
+            <p>Vibrant colors for crafting and printing.</p>
         </div>
         <div class="product">
             <h3>Notebooks</h3>
-            <p>Durable notebooks with stone paper pages.</p>
+            <p>Eco-friendly, durable, and perfect for school.</p>
         </div>
         <div class="product">
             <h3>Pocket Notebooks</h3>
-            <p>Compact and stylish pocket notebooks.</p>
+            <p>Handy notebooks for quick notes on the go.</p>
         </div>
         <div class="product">
             <h3>Art Books</h3>
-            <p>Specially crafted art books for artists and creators.</p>
+            <p>Best for sketching and creative works.</p>
         </div>
         <div class="product">
             <h3>Origami Paper</h3>
-            <p>High-quality, foldable origami paper in various colors.</p>
+            <p>Colorful squares for origami art and crafting.</p>
         </div>
+        <a href="donate.html">Donate</a>
     </main>
-
     <footer>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to email us at: avirajkumarsingh.18cmis0102@meruinternationalschool.com</p>
         <p>&copy; 2024 Stone Paper</p>
     </footer>
 </body>
