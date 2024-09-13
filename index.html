@@ -13,46 +13,48 @@
         }
         header {
             background-color: #4CAF50;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             color: white;
         }
         nav {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             color: #4CAF50;
+            font-size: 18px;
         }
         nav a:hover {
             color: #333;
             text-decoration: underline;
         }
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #4CAF50;
             color: white;
-            margin-top: 20px;
+            margin-top: 30px;
         }
         .button {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             text-decoration: none;
+            font-size: 18px;
         }
         .button:hover {
             background-color: #45a049;
@@ -71,8 +73,6 @@
         <a href="#benefits">Benefits</a>
         <a href="#how-its-made">How It's Made</a>
         <a href="shopping.html" class="button">Shopping</a>
-        <a href="donate.html" class="button">Donate</a>
-        <a href="#contact">Contact Us</a>
     </nav>
 
     <main>
@@ -95,11 +95,6 @@
             <h2>How It's Made</h2>
             <p>Stone paper is produced by grinding down calcium carbonate rocks into a fine powder. This is then mixed with a small amount of non-toxic resin to create the paper.</p>
         </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to email us at <a href="mailto:agrashvik@gmail.com">agrashvik@gmail.com</a>.</p>
-        </section>
     </main>
 
     <footer role="contentinfo">
@@ -107,6 +102,7 @@
     </footer>
 
     <script>
+        // JavaScript to update the footer year automatically
         const yearSpan = document.getElementById('year');
         yearSpan.textContent = new Date().getFullYear();
     </script>
