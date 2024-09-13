@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shop for stone paper products including A4 sheets, notebooks, and more.">
-    <title>Shopping - Stone Paper</title>
+    <title>Shop - Stone Paper Products</title>
     <style>
-        /* Basic styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,19 +18,6 @@
             text-align: center;
             color: white;
         }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4CAF50;
-        }
-        nav a:hover {
-            color: #333;
-            text-decoration: underline;
-        }
         main {
             max-width: 800px;
             margin: 20px auto;
@@ -40,6 +26,16 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .product {
+            background-color: #e0e0e0;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product h3 {
+            margin: 0;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -47,43 +43,46 @@
             color: white;
             margin-top: 20px;
         }
-        .product-list {
-            list-style: none;
-            padding: 0;
-        }
-        .product-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
     </style>
 </head>
 <body>
 
     <!-- Header section -->
     <header>
-        <h1>Stone Paper Shopping</h1>
-        <p>Eco-friendly Products</p>
+        <h1>Stone Paper Products</h1>
+        <p>Shop eco-friendly products</p>
     </header>
-
-    <!-- Navigation section -->
-    <nav role="navigation">
-        <a href="index.html">Home</a>
-    </nav>
 
     <!-- Main content section -->
     <main>
-        <h2>Our Products</h2>
-        <ul class="product-list">
-            <li>Plain A4 Sheets</li>
-            <li>Colour A4 Sheets</li>
-            <li>Notebooks</li>
-            <li>Pocket Notebooks</li>
-            <li>Art Books</li>
-        </ul>
+        <section class="product">
+            <h3>Plain A4 Sheets</h3>
+            <p>Durable and smooth A4-sized sheets made from stone paper.</p>
+        </section>
+
+        <section class="product">
+            <h3>Colour A4 Sheets</h3>
+            <p>Vibrant, colorful A4 sheets perfect for projects and crafts.</p>
+        </section>
+
+        <section class="product">
+            <h3>Notebooks</h3>
+            <p>Eco-friendly notebooks made from stone paper, available in various sizes.</p>
+        </section>
+
+        <section class="product">
+            <h3>Pocket Notebooks</h3>
+            <p>Convenient and durable pocket-sized notebooks for notes on the go.</p>
+        </section>
+
+        <section class="product">
+            <h3>Art Books</h3>
+            <p>High-quality art books designed for drawing and painting, made from stone paper.</p>
+        </section>
     </main>
 
     <!-- Footer section -->
-    <footer role="contentinfo">
+    <footer>
         <p>&copy; <span id="year">2024</span> Stone Paper. All Rights Reserved.</p>
     </footer>
 
