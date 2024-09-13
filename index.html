@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover stone paper, an eco-friendly alternative to traditional paper. Learn about its benefits, production process, and how it contributes to a greener planet.">
     <title>Stone Paper - Eco-friendly Innovation</title>
     <style>
-        /* Basic styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,13 +24,11 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: white;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
+            color: #4CAF50;
         }
         nav a:hover {
-            background-color: #333;
+            color: #333;
+            text-decoration: underline;
         }
         main {
             max-width: 800px;
@@ -49,34 +45,36 @@
             color: white;
             margin-top: 20px;
         }
-        .highlight-btn {
-            background-color: #FFA500;
-            padding: 10px 20px;
+        .button {
+            background-color: #4CAF50;
             color: white;
-            text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
         }
-        .highlight-btn:hover {
-            background-color: #FF4500;
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header section -->
     <header>
         <h1>Stone Paper</h1>
         <p>An Eco-friendly Innovation</p>
     </header>
 
-    <!-- Navigation section -->
     <nav role="navigation">
-        <a href="shopping.html">Shopping</a>
-        <a href="donate.html" class="highlight-btn">Donate</a>
+        <a href="#what-is-stone-paper">What is Stone Paper?</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#how-its-made">How It's Made</a>
+        <a href="shopping.html" class="button">Shopping</a>
+        <a href="donate.html" class="button">Donate</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 
-    <!-- Main content section -->
     <main>
         <section id="what-is-stone-paper">
             <h2>What is Stone Paper?</h2>
@@ -100,17 +98,15 @@
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to email us at avirajkumarsingh.18cmis0102@meruinternationalschool.com.</p>
+            <p>If you have any questions, feel free to email us at <a href="mailto:agrashvik@gmail.com">agrashvik@gmail.com</a>.</p>
         </section>
     </main>
 
-    <!-- Footer section -->
     <footer role="contentinfo">
         <p>&copy; <span id="year">2024</span> Stone Paper. All Rights Reserved.</p>
     </footer>
 
     <script>
-        // JavaScript to update the footer year automatically
         const yearSpan = document.getElementById('year');
         yearSpan.textContent = new Date().getFullYear();
     </script>
