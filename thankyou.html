@@ -52,11 +52,18 @@
 
     <main>
         <h2>Your Donation is Appreciated</h2>
-        <p>Thank you for your generous contribution! Your support helps us continue our mission of promoting eco-friendly paper.</p>
+        <p>Thank you for your generous contribution of <strong id="donation-amount"></strong> rupees! Your support helps us continue our mission of promoting eco-friendly paper.</p>
         <div class="back-button">
             <button onclick="window.location.href='index.html'">Go Back to Home</button>
         </div>
     </main>
+
+    <script>
+        // Get the query parameter for the donation amount
+        const urlParams = new URLSearchParams(window.location.search);
+        const amount = urlParams.get('amount');
+        document.getElementById('donation-amount').textContent = amount ? amount : '0';
+    </script>
 
 </body>
 </html>
