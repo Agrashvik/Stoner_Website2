@@ -3,78 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Page</title>
+    <title>Shopping - Stone Paper</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 0;
             margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            text-align: center;
+            margin: 30px 0;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
         .product {
-            background-color: #ffffff;
+            background-color: #f9f9f9;
             padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .product h3 {
             margin: 0;
+            font-size: 22px;
         }
-        .back-button {
-            margin-top: 20px;
+        .product p {
+            margin: 10px 0 0;
+            font-size: 16px;
         }
-        .button {
+        .back-button, .donate-button {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .button, .donate-button-button {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             text-decoration: none;
+            font-size: 18px;
         }
-        .button:hover {
+        .button:hover, .donate-button-button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
 
-    <h1>Shopping Page</h1>
+    <header>
+        <h1>Shopping</h1>
+    </header>
 
-    <div class="product">
-        <h3>Plain A4 Sheets</h3>
-        <p>High-quality plain sheets for everyday use.</p>
-    </div>
+    <nav role="navigation">
+        <a href="index.html" class="button">Home</a>
+        <a href="donate.html" class="donate-button-button">Donate</a>
+    </nav>
 
-    <div class="product">
-        <h3>Colour A4 Sheets</h3>
-        <p>Bright and colorful A4 sheets perfect for arts and crafts.</p>
-    </div>
+    <main>
+        <div class="product">
+            <h3>Plain A4 Sheets</h3>
+            <p>High-quality plain A4 sheets for all your needs.</p>
+        </div>
+        <div class="product">
+            <h3>Colour A4 Sheets</h3>
+            <p>Vibrant color A4 sheets to brighten up your work.</p>
+        </div>
+        <div class="product">
+            <h3>Notebooks</h3>
+            <p>Perfect notebooks for jotting down notes and ideas.</p>
+        </div>
+        <div class="product">
+            <h3>Pocket Notebooks</h3>
+            <p>Handy pocket-sized notebooks for on-the-go writing.</p>
+        </div>
+        <div class="product">
+            <h3>Art Books</h3>
+            <p>Beautiful art books to inspire and create.</p>
+        </div>
+        <div class="product">
+            <h3>Origami Paper</h3>
+            <p>High-quality paper for all your origami projects.</p>
+        </div>
 
-    <div class="product">
-        <h3>Notebooks</h3>
-        <p>Durable notebooks for all your writing needs.</p>
-    </div>
+        <div class="donate-button">
+            <a href="donate.html" class="donate-button-button">Donate Now</a>
+        </div>
+    </main>
 
-    <div class="product">
-        <h3>Pocket Notebooks</h3>
-        <p>Small, handy notebooks for quick notes on the go.</p>
-    </div>
-
-    <div class="product">
-        <h3>Art Books</h3>
-        <p>Premium quality art books for sketching and drawing.</p>
-    </div>
-
-    <div class="product">
-        <h3>Origami Paper</h3>
-        <p>Perfect paper for creating intricate origami designs.</p>
-    </div>
-
-    <div class="back-button">
-        <button onclick="window.history.back()">Go Back</button>
-    </div>
+    <footer role="contentinfo">
+        <div class="back-button">
+            <button onclick="window.history.back()">Go Back</button>
+        </div>
+    </footer>
 
 </body>
 </html>
