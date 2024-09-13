@@ -32,6 +32,18 @@
             color: #333;
             text-decoration: underline;
         }
+        #shopping-btn {
+            background-color: #FF9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #shopping-btn:hover {
+            background-color: #e68a00;
+        }
         main {
             max-width: 800px;
             margin: 20px auto;
@@ -46,25 +58,6 @@
             background-color: #4CAF50;
             color: white;
             margin-top: 20px;
-        }
-        /* Shopping and Donate button styling */
-        .shopping-btn, .donate-btn {
-            display: inline-block;
-            background-color: #ff6347;
-            color: white;
-            padding: 12px 25px;
-            font-size: 18px;
-            border-radius: 25px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .shopping-btn:hover, .donate-btn:hover {
-            background-color: #ff4500;
-        }
-        .donate-btn {
-            background-color: #4CAF50;
-            margin-left: 10px;
         }
     </style>
 </head>
@@ -81,8 +74,8 @@
         <a href="#what-is-stone-paper">What is Stone Paper?</a>
         <a href="#benefits">Benefits</a>
         <a href="#how-its-made">How It's Made</a>
-        <a href="shopping.html" class="shopping-btn">Go to Shopping</a>
-        <a href="donate.html" class="donate-btn">Donate Now</a>
+        <a href="shopping.html"><button id="shopping-btn">Shop Now</button></a>
+        <a href="donate.html"><button id="shopping-btn">Donate</button></a>
     </nav>
 
     <!-- Main content section -->
@@ -105,11 +98,6 @@
         <section id="how-its-made">
             <h2>How It's Made</h2>
             <p>Stone paper is produced by grinding down calcium carbonate rocks into a fine powder. This is then mixed with a small amount of non-toxic resin to create the paper.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to email us at avirajkumarsingh.18cmis0102@meruinternationalschool.com.</p>
         </section>
     </main>
 
