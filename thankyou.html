@@ -8,26 +8,34 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        main {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-top: 50px;
+        }
+        .back-button {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Thank You for Your Donation!</h1>
-        <p>Your support helps us continue our work.</p>
-    </main>
+
+    <h1>Thank You for Your Donation!</h1>
+    <p>Your generosity is greatly appreciated.</p>
+
+    <div class="back-button">
+        <button onclick="window.history.back()">Go Back</button>
+    </div>
+
 </body>
 </html>
