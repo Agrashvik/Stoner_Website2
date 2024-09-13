@@ -8,73 +8,58 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
             text-align: center;
+            margin-top: 50px;
         }
-        main {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: white;
+        .donation-form {
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
+        .back-button {
+            margin-top: 20px;
+        }
+        .button {
             background-color: #4CAF50;
             color: white;
-        }
-        input[type="number"] {
-            padding: 10px;
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        button {
             padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
         }
-        button:hover {
+        .button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Donate</h1>
-    </header>
-    <main>
-        <h2>Enter the amount you want to donate (minimum 1 rupee)</h2>
-        <input type="number" id="amount" min="1" value="1">
-        <br>
-        <button onclick="donate()">Donate</button>
-    </main>
-    <footer>
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to email us at: avirajkumarsingh.18cmis0102@meruinternationalschool.com</p>
-        <p>&copy; 2024 Stone Paper</p>
-    </footer>
+
+    <h1>Donate</h1>
+    <div class="donation-form">
+        <form action="thankyou.html" method="post" onsubmit="return validateDonation()">
+            <label for="amount">Enter donation amount (₹): </label>
+            <input type="number" id="amount" name="amount" min="1" required>
+            <button type="submit" class="button">Donate</button>
+        </form>
+    </div>
+
+    <div class="back-button">
+        <button onclick="window.history.back()">Go Back</button>
+    </div>
 
     <script>
-        function donate() {
-            const amount = document.getElementById('amount').value;
-            if (amount >= 1) {
-                window.location.href = "thankyou.html";
-            } else {
-                alert('Please enter a valid donation amount (minimum 1 rupee).');
+        function validateDonation() {
+            var amount = document.getElementById('amount').value;
+            if (amount < 1) {
+                alert('Donation amount must be at least 1 rupee.');
+                return false;
             }
+            return true;
         }
     </script>
+
 </body>
 </html>
